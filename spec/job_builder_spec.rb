@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe Nomade::JobBuilder do
   it "should build a job object" do
-    http = Nomade::Http.new("http://nomadserver.vpn.kaspergrubbe.com:4646")
+    http = Nomade::Http.new(nomad_endpoint)
     job_builder = Nomade::JobBuilder.new(http)
     job = job_builder.build("spec/jobfiles/whoami.hcl.erb", "billetto/billetto-rails:4.2.24", {
       datacenter: "eu-test-1",
