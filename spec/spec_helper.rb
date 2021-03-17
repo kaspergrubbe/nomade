@@ -116,7 +116,7 @@ rescue StandardError => e
 end
 
 def nomad_endpoint
-  "http://nomadserver.vpn.kaspergrubbe.com:4646"
+  "http://nomadserv.vpn.kaspergrubbe.com:4646"
 end
 
 def default_job_vars
